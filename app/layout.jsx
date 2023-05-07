@@ -1,4 +1,5 @@
 import Nav from "./auth/Nav";
+import QueryWrapper from "./auth/QueryWrapper";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -25,8 +26,10 @@ export default function RootLayout({ children }) {
 			<body
 				className={`mx-4 md:mx-8 xl:mx-96 ${inter.variable} bg-slate-100`}
 			>
-				<Nav />
-				{children}
+				<QueryWrapper>
+					<Nav />
+					{children}
+				</QueryWrapper>
 			</body>
 		</html>
 	);

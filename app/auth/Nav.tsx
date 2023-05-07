@@ -6,7 +6,7 @@ import Logged from "./Logged";
 
 export default async function Nav() {
 	const session = await getServerSession(authOptions);
-	console.log(session);
+	// console.log(session);
 
 	return (
 		<nav className="flex items-center justify-between py-4 mb-4 border-b border-slate-300">

@@ -11,7 +11,7 @@ interface user {
 
 export default function Logged({ user }: { user: user }) {
 	return (
-		<div className="flex flex-col items-end p-1 border rounded border-slate-400">
+		<div className="flex flex-col items-end p-1 border rounded border-slate-300">
 			<Link href={"/dashboard"} className="flex items-center gap-2">
 				<Image
 					width={24}
