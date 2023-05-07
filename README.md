@@ -28,7 +28,7 @@ if (process.env.NODE_ENV !== "production") globalThis.prisma = client;
 export default client;
 ```
 
-Make sure to add `DATABASE_URL` to `/local`
+Make sure to add `DATABASE_URL` to `.env`
 
 Once this is setup...
 
@@ -76,5 +76,6 @@ Copy and paste accout/user schemas into `prisma/schema.prisma`
     -   `APIs & Services/Credentials` -> `+ CREATE CREDENTIAL/OAuth client ID`
     -   Select Web Application, add locahost to authorized js origins
     -   Consent screen may be required, go through it
+-   Add `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` to .env.local
 
-#### Next.js Setup
+#### Setup In Next
